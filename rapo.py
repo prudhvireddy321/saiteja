@@ -1,11 +1,11 @@
-appt=int(input())
-cadt=list(map(int,input().split()))
-xawt=[1]*appt
-for pa in range(appt):
+app=int(input())
+cad=list(map(int,input().split()))
+xaw=[1]*app
+for pa in range(app):
     if pa==0:
-        if cadt[pa]>cadt[pa+1]:
-            xawt[pa]=xawt[pa]+xawt[pa+1]
+        if cad[pa]>cad[pa+1]:
+            xaw[pa]=xaw[pa]+xaw[pa+1]
     elif pa>0:
-        if cadt[pa]>cadt[pa-1]:
-            xawt[pa]=xawt[pa]+xawt[pa-1]
-print(sum(xawt))
+        if cad[pa]>cad[pa-1]:
+            xaw[pa]=xaw[pa]+xaw[pa-1]
+print(sum(xaw))
