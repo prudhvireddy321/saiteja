@@ -1,9 +1,9 @@
-n=int(input())
-m=list(map(int,input().split()[:n]))
+r=int(input())
+s=list(map(int,input().split()[:r]))
 c=[]
 d=0
-for i in m:
-  if(m.count(i)>1):
+for i in s:
+  if(s.count(i)>1):
     if i not in c:
       c.append(i)
 if(len(c)==0):
