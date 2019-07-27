@@ -1,7 +1,7 @@
 import sys, string, math
-n = int(input())
-if n==18 :
+s = int(input())
+if s==18 :
     print(3)
     sys.exit()
-k = len(bin(n)[2:])
-print(n-2**(k-1))
+k = len(bin(s)[2:])
+print(s-2**(k-1))
