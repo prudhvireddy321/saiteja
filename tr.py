@@ -10,4 +10,4 @@ for i in range(0,k) :
     for j in range(a-1,b) :
         x = x ^ L[j]
         #print(L[j],x)
-    print(x
+    print(x)
