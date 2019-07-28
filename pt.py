@@ -1,9 +1,9 @@
 import sys, string, math
-n,k = input().split()
-n,k = int(n), int(k)
+s,k = input().split()
+s,k = int(n), int(k)
 L = [ int(x) for x in input().split()]
-for i in range(0,n-1) :
-    for j in range(i+1,n) :
+for i in range(0,s-1) :
+    for j in range(i+1,s) :
         if L[i] + L[j] == k :
             print('yes')
             sys.exit()
