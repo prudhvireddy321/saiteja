@@ -1,5 +1,7 @@
 import sys, string, math
-n,e,s = input().split()
+n = input()
+e = input()
+s = input()
 n,e,s = int(n), int(e), int(s)
 if n == 224 :
     print('YES')
