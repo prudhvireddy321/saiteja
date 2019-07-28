@@ -1,6 +1,6 @@
 import sys, string, math
 t = int(input())
-k = 2**t
+k = 3**t
 L = []
 for i in range(0,k) :
     s = bin(i)[2:]
