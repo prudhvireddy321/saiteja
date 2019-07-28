@@ -5,8 +5,8 @@ import sys, string, math
 def lenOfLongIncSubArr(arr, n):
     # 'max' to store the length of longest increasing subarray
     # 'len' to store the lengths of longest increasing subarray
-    max1 = 1
-    len1 = 1
+    max = 1
+    len = 1
 
     # traverse the array from the 2nd element
     for i in range(1, n):
@@ -14,14 +14,14 @@ def lenOfLongIncSubArr(arr, n):
         if (arr[i] > arr[i - 1]):
             len1 = len1 + 1
         else:
-            if (max1 < len1):
-                max1 = len1
+            if (max < len1):
+                max = len1
             len1 = 1
     # comparing the length of the last
     # increasing subarray with 'max'
-    if (max1 < len1):
-        max1 = len1
-    return max1
+    if (max < len1):
+        max = len1
+    return max
 
 
 # Driver program to test above
